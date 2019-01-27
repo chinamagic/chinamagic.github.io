@@ -1,6 +1,7 @@
 {
   "short_name": "Chinamagic",
   "name": "Chinamagic",
+  "display": "fullscreen",
   "icons": [
     {
       "src": "icon-256x256.png",
