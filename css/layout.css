@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* layout */
+#wrap{width:100%;}
+#header {z-index:999; position:relative; width:100%; *zoom:1;}
+#header:after {display:block; content:""; clear:both;}
+#header .header_in {width:1058px; height:125px; margin:0 auto; position:relative; *zoom:1; text-align:center; }
+#header .header_in:after {display:block; content:""; clear:both;}
+#header .header_in .logo_h1{height:44px; padding-top:18px; text-align:center;}
+#header .header_in .gnb_area{margin-top:18px; display:inline-block; position:relative; *zoom:1;}
+#header .header_in .gnb_area:after {display:block; content:""; clear:both;}
+#header .header_in .gnb_area > ul > li{float:left; background:url('../images/common/gnb_line.png') 0 8px no-repeat; padding:0 10px;}
+#header .header_in .gnb_area > ul > li:first-child{background:none;}
+#header .header_in .gnb_area > ul > li > a{display:block; width:70px; position:relative; z-index:999; padding:0px 15px 30px 15px;  font-size:18px; font-weight:bold; letter-spacing:-1px;}
+#header .header_in .gnb_area > ul > li.on > a{color:#c31800;}
+#header .header_in .gnb_area > ul > li > a:hover{color:#c31800;}
+#header .header_in .gnb_area .gnb_hover_line{position:absolute; top:28px; left:27px; width:66px; height:2px; display:inline-block; background:#c31800;}
+
+#header .header_in .gnb_side{position:absolute; right:0; top:20px; *zoom:1;}
+#header .header_in .gnb_side:after {display:block; content:""; clear:both;}
+#header .header_in .gnb_side ul li{float:left;}
+#header .header_in .gnb_side ul li a{display:inline-block; width:52px; height:50px; position:relative;*zoom:1;}
+#header .header_in .gnb_side ul li a:after {display:block; content:""; clear:both;}
+#header .header_in .gnb_side ul li a > span{letter-spacing:-1px; font-weight:bold; font-size:13px; color:#d01900; position:absolute; width:100%; left:0; top:27px;}
+
+#header .header_in .gnb_side ul li.gnb_sd01 a{background:url('../images/common/gnb_side01.png') center 0 no-repeat;}
+#header .header_in .gnb_side ul li.gnb_sd02 a{background:url('../images/common/gnb_side02.png') center 0 no-repeat;}
+#header .header_in .gnb_side ul li.gnb_sd03 a{background:url('../images/common/gnb_side03.png') center 0 no-repeat;}
+
+#header .header_in .gnb_area > ul > li .snb{padding:15px 10px; display:none; position:absolute; top:45px; background:#c31800;}
+#header .header_in .gnb_area > ul > li .snb > li{float:left;}
+#header .header_in .gnb_area > ul > li .snb > li > a{padding:10px 15px; font-size:14px; color:#fff; font-family:'Noto Medium'; letter-spacing:-1px;}
+#header .header_in .gnb_area > ul > li .snb > li:first-child > a{border-left:none;}
+#header .header_in .gnb_area > ul > li .snb > li > a:hover{text-decoration:underline;}
+
+#header .header_in .gnb_area > ul > li .snb01{left:20px; }
+#header .header_in .gnb_area > ul > li .snb02{left:130px;}
+#container, #contents{position:relative; width:100%; *zoom:1; }
+#container:after, #contents:after {display:block; content:""; clear:both;}
+
+#footer{position:relative; width:100%; *zoom:1; background:#fff; border-top:1px solid #ccc; height:120px; }
+#footer:after {display:block; content:""; clear:both;}
+#footer .footer_in{width:1058px;  position:relative; *zoom:1; margin:0 auto;}
+#footer .footer_in:after {display:block; content:""; clear:both;}
+#footer .footer_in .footer_txt{position:relative; *zoom:1; margin:30px 0 20px 0;}
+#footer .footer_in .footer_txt:after {display:block; content:""; clear:both; letter-spacing:-1px;}
+#footer .footer_in .footer_txt > li{float:left; font-size:13px; margin-right:25px; color:#777;}
+#footer .footer_in .footer_txt > li > span{font-weight:bold;}
+#footer .footer_in .copy{font-size:14px; color:#666; text-align:center;}
+
+/*
+#wrapper {width:100%; min-width:980px;}
+#header_wrap {width:100%; height:79px; border-bottom:1px solid #c3c3c3;}
+#header {width:980px; margin:0 auto; *zoom:1;}
+#header:after {display:block; content:""; clear:both;}
+#header .top_logo {float:left; width:200px; height:79px; background:url('../../images/com/top_logo.jpg') left top no-repeat;}
+#gnb {float:right; width:780px;}
+#gnb > ul {text-align:right;}
+#gnb > ul > li {display:inline-block;}
+#gnb > ul > li > a {display:block; padding:29px 30px 28px 30px;}
+#gnb > ul > li > a > span {font-size:17px; font-weight:bold; color:#656462;}
+#gnb > ul > li.on > a span {color:#909c00;}
+#gnb > ul > li.onPage > a span {color:#909c00;}
+#gnb > ul > li > a:hover span {color:#909c00;}
+
+#container {width:980px; margin:0 auto; *zoom:1;}
+#container:after {display:block; content:""; clear:both;}
+#lnb {float:left; width:200px;}
+#lnb dl {}
+#lnb dl dt {padding:70px 0 10px 0; margin-bottom:10px; border-bottom:3px solid #a1ae0a;}
+#lnb dl dt span {color:#323232; font-size:23px; font-weight:bold;}
+#lnb dl dd {}
+#lnb dl dd > ul {}
+#lnb dl dd > ul > li {}
+#lnb dl dd > ul > li > a {display:block; height:40px; border-bottom:1px solid #dfdfdf; background:#fff;}
+#lnb dl dd > ul > li.on > a {background:url('../../images/com/bg_lnb_over.png') left top no-repeat;}
+#lnb dl dd > ul > li.on.more > a {background:url('../../images/com/bg_lnb_over.png') left top no-repeat;}
+#lnb dl dd > ul > li.onPage > a {background:url('../../images/com/bg_lnb_over.png') left top no-repeat;}
+#lnb dl dd > ul > li.onPage.more > a {background:url('../../images/com/bg_lnb_over.png') left top no-repeat;}
+#lnb dl dd > ul > li.more > a {background:url('../../images/com/bg_lnb_more.png') left top no-repeat;}
+#lnb dl dd > ul > li > a span {display:block; padding:10px; color:#454545; font-size:15px; font-weight:bold; letter-spacing:-2px;}
+#lnb dl dd > ul > li.on > a span {color:#fff;}
+#lnb dl dd > ul > li.on.more > a span {color:#fff;}
+#lnb dl dd > ul > li.more > a span {}
+#lnb dl dd > ul > li.onPage.more > a span {color:#fff;}
+#lnb dl dd > ul > li > ul {display:none; padding:10px; border-bottom:1px solid #dfdfdf; background:#f5f5f5;}
+/*#lnb dl dd > ul > li.on > ul {display:block;}*/
+#lnb dl dd > ul > li > ul > li {padding-left:10px; background:url('../../images/com/bul_lnb.gif') left center no-repeat;}
+#lnb dl dd > ul > li > ul > li.on {background:url('../../images/com/bul_lnb_over.gif') left center no-repeat;}
+#lnb dl dd > ul > li > ul > li:hover {background:url('../../images/com/bul_lnb_over.gif') left center no-repeat;}
+#lnb dl dd > ul > li > ul > li > a {display:block; padding:5px 0;}
+#lnb dl dd > ul > li > ul > li > a span {color:#454545; font-size:14px; letter-spacing:-1px;}
+#lnb dl dd > ul > li > ul > li.on > a span {color:#909c00;}
+#lnb dl dd > ul > li > ul > li:hover > a span {color:#909c00;}
+
